@@ -1,0 +1,9 @@
+$ sudo apt update && apt install -y docker.io
+$ nano ./requirements.txt
+$ nano ./app.py
+$ nano ./Dockerfile
+$ sudo docker build -t pyapp .
+$ sudo docker run -p5000:5000 -d pyapp
+$ sudo docker login
+$ sudo docker image tag pyapp mitropolitippolit/homework04
+$ sudo docker push mitropolitippolit/homework04
